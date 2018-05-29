@@ -20,8 +20,8 @@ export class LoginComponent implements OnInit {
   }
   login() {
 
-    this.username = 'agentuser1';
-    this.password = '123456abc';
+    //this.username = 'agentuser1';
+    //this.password = '123456abc';
     if (this.password !== '') {
       this.appService.authenication(this.username, sha256(this.password)).subscribe(response => {
         console.log(response);
