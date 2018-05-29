@@ -21,6 +21,10 @@ import {NgbModule , NgbDropdownConfig} from '@ng-bootstrap/ng-bootstrap';
 import { MainComponent } from './components/main/main.component';
 import { LoginComponent } from './components/login/login.component';
 import { AgentMainmenuComponent } from './components/agent-mainmenu/agent-mainmenu.component';
+import { AgentRegisterNewPatientComponent } from './components/agent-register-new-patient/agent-register-new-patient.component';
+import { AgentReviewPatientComponent } from './components/agent-review-patient/agent-review-patient.component';
+import { AgentReviewAppointmentComponent } from './components/agent-review-appointment/agent-review-appointment.component';
+import { AgentGenerateAppointmentComponent } from './components/agent-generate-appointment/agent-generate-appointment.component';
 
 
 @Injectable()
@@ -43,7 +47,11 @@ export class Authenicate implements Resolve<Observable<string>> {
     MainComponent,
     NavbarComponent,
     LoginComponent,
-    AgentMainmenuComponent
+    AgentMainmenuComponent,
+    AgentRegisterNewPatientComponent,
+    AgentReviewPatientComponent,
+    AgentReviewAppointmentComponent,
+    AgentGenerateAppointmentComponent
   ],
   imports: [
     BrowserModule,
@@ -59,6 +67,27 @@ export class Authenicate implements Resolve<Observable<string>> {
       {
         path: 'AgentMainmenu',
         component: AgentMainmenuComponent,
+        resolve: { authenicated: Authenicate }
+      },
+      {
+        path: 'AgentReviewPatient',
+        component: AgentReviewPatientComponent,
+        resolve: { authenicated: Authenicate }
+      },
+      {
+        path: 'AgentRegisterNewPatient',
+        component: AgentRegisterNewPatientComponent,
+        resolve: { authenicated: Authenicate }
+      },
+
+      {
+        path: 'AgentGenerateAppointment',
+        component: AgentGenerateAppointmentComponent,
+        resolve: { authenicated: Authenicate }
+      },
+      {
+        path: 'AgentReviewAppointment',
+        component: AgentReviewAppointmentComponent,
         resolve: { authenicated: Authenicate }
       },
       {
