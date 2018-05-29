@@ -1,0 +1,26 @@
+<div class="container logincontainer">
+  <div class="row justify-content-center">
+
+    <div class="col-sm-6 col-md-4 col-md-offset-4">
+      <div class="account-wall">
+        <form class="form-signin" #loginForm="ngForm">
+          <div class="input-group mb-3">
+            <input id="username" type="text" name="username" class="form-control" #user="ngModel" [(ngModel)]="username" placeholder="User Name" required>
+          </div>
+          <div class="input-group mb-3" [hidden]="user.valid || (user.pristine && user.untouched)">
+            <span class="warning-text" id="userNameWarning">Username is required</span>
+          </div>
+          <div class="input-group mb-3">
+            <input id="password" type="password" name="password" class="form-control" #pass="ngModel" [(ngModel)]="password" placeholder="Password" required>
+          </div>
+          <div class="input-group mb-3" [hidden]="pass.valid || (pass.pristine && pass.untouched)">
+            <span class="warning-text" id="passwordWarning">Password is required</span>
+          </div>
+          <button class="btn btn-lg btn-primary btn-block" type="submit" (click)="login()">
+            Login
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

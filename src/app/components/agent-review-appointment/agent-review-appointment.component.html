@@ -1,0 +1,500 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="equipment-detail-background card">
+      <div class="card-body">
+        <h5 class="card-title">Patient info.</h5>
+        <div class="row">
+          <div class="input-group mb-3 col-md-6">
+            <div class="input-group-prepend">
+              <label class="input-group-text">Patient First Name :</label>
+            </div>
+            <input type="text" class="form-control" [(ngModel)]="Data.PatientFirstName" required [disabled]="true">
+          </div>
+          <div class="input-group mb-3 col-md-6">
+            <div class="input-group-prepend">
+              <label class="input-group-text">Patient Last Name :</label>
+            </div>
+            <input type="text" class="form-control" [(ngModel)]="Data.PatientLastName" required [disabled]="true">
+
+          </div>
+
+        </div>
+        <div class="row">
+          <div class="input-group mb-3 col-md-6">
+            <div class="input-group-prepend">
+              <label class="input-group-text">Gender :</label>
+            </div>
+            <input type="text" class="form-control" [(ngModel)]="Data.Gender" required [disabled]="true">
+
+          </div>
+
+          <div class="input-group mb-3 col-md-6">
+            <div class="input-group-prepend">
+              <label class="input-group-text">Marital Status :</label>
+            </div>
+            <input type="text" class="form-control" [(ngModel)]="Data.MaritalStatus" required [disabled]="true">
+
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-group mb-3 col-md-6">
+            <div class="input-group-prepend">
+              <label class="input-group-text">Date of Birth :</label>
+            </div>
+            <input type="date" class="form-control" [(ngModel)]="Data.DOB" required [disabled]="true">
+          </div>
+
+          <div class="input-group mb-3 col-md-6">
+            <div class="input-group-prepend">
+              <label class="input-group-text">Occupation :</label>
+            </div>
+            <input type="text" class="form-control" [(ngModel)]="Data.Occupation"
+                   required [disabled]="true">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-group mb-3 col-md-6">
+            <div class="input-group-prepend">
+              <label class="input-group-text">Address :</label>
+            </div>
+            <textarea [(ngModel)]="Data.Address" style="width: 100%" [disabled]="true"></textarea>
+
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-group mb-3 col-md-6">
+            <div class="input-group-prepend">
+              <label class="input-group-text">Nationality :</label>
+            </div>
+            <input type="date" class="form-control" [(ngModel)]="Data.Nationality" required [disabled]="true">
+          </div>
+
+          <div class="input-group mb-3 col-md-6">
+            <div class="input-group-prepend">
+              <label class="input-group-text">Passport Number :</label>
+            </div>
+            <input type="text" class="form-control" [(ngModel)]="Data.PassportNumber" required [disabled]="true">
+          </div>
+
+
+        </div>
+
+
+        <div class="row">
+          <div class="input-group mb-3 col-md-6">
+            <div class="input-group-prepend">
+              <label class="input-group-text">languages spoken :</label>
+            </div>
+            <input type="text" class="form-control" [(ngModel)]="Data.languagesSpoken" required [disabled]="true">
+          </div>
+
+          <div class="input-group mb-3 col-md-6">
+            <div class="input-group-prepend">
+              <label class="input-group-text">Hospital Number :</label>
+            </div>
+            <input type="text" class="form-control" [(ngModel)]="Data.HospitalNumber" required [disabled]="true">
+          </div>
+
+
+        </div>
+
+
+        <div class="row">
+          <div class="input-group mb-3 col-md-6">
+            <div class="input-group-prepend">
+              <label class="input-group-text">Contact Phone :</label>
+            </div>
+            <input type="text" class="form-control" [(ngModel)]="Data.ContactPhone" required [disabled]="true">
+          </div>
+
+          <div class="input-group mb-3 col-md-6">
+            <div class="input-group-prepend">
+              <label class="input-group-text">Contact Mobile :</label>
+            </div>
+            <input type="text" class="form-control" [(ngModel)]="Data.ContactMobile" required [disabled]="true">
+          </div>
+
+
+        </div>
+
+        <div class="row">
+          <div class="input-group mb-3 col-md-6">
+            <div class="input-group-prepend">
+              <label class="input-group-text">Email :</label>
+            </div>
+            <input type="text" class="form-control" [(ngModel)]="Data.Email" required [disabled]="true">
+          </div>
+
+          <div class="input-group mb-3 col-md-6">
+            <div class="input-group-prepend">
+              <label class="input-group-text">Emergency Contact Details :</label>
+            </div>
+            <input type="text" class="form-control" [(ngModel)]="Data.EmergencyContactDetails" required
+                   [disabled]="true">
+          </div>
+
+
+        </div>
+
+        <div class="row">
+          <div class="input-group mb-3 col-md-6">
+            <div class="input-group-prepend">
+              <label class="input-group-text">Relationship with Patient :</label>
+            </div>
+            <input type="text" class="form-control" [(ngModel)]="Data.RelationshipWithPatient" required
+                   [disabled]="true">
+          </div>
+
+          <div class="input-group mb-3 col-md-6">
+            <div class="input-group-prepend">
+              <label class="input-group-text">Do you have Medical Insurance :</label>
+            </div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <input type="radio" name="MedicalInsurance" value="No" [(ngModel)]="Data.MedicalInsurance"
+                   [disabled]="true"> No &nbsp; &nbsp; &nbsp;
+            <input type="radio" name="MedicalInsurance" value="Yes" [(ngModel)]="Data.MedicalInsurance"
+                   [disabled]="true"> Yes
+          </div>
+
+
+        </div>
+
+        <div class="row">
+          <div class="input-group mb-3 col-md-6">
+            <div class="input-group-prepend">
+              <label class="input-group-text">If yes,Insurance Company name :</label>
+            </div>
+            <input type="text" class="form-control" [(ngModel)]="Data.InsuranceCompanyName" required [disabled]="true">
+          </div>
+
+          <div class="input-group mb-3 col-md-6">
+            <div class="input-group-prepend">
+              <label class="input-group-text">Policy Number :</label>
+            </div>
+            <input type="text" class="form-control" [(ngModel)]="Data.PolicyNumber" required [disabled]="true">
+          </div>
+
+
+        </div>
+
+        <div class="row">
+          <div class="input-group mb-3 col-md-6">
+            <div class="input-group-prepend">
+              <label class="input-group-text">Do you require an Interpreter :</label>
+            </div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <input type="radio" name="Interpreter" value="No" [(ngModel)]="Data.Interpreter" [disabled]="true"> No
+            &nbsp; &nbsp; &nbsp;
+            <input type="radio" name="Interpreter" value="Yes" [(ngModel)]="Data.Interpreter" [disabled]="true"> Yes
+          </div>
+
+          <div class="input-group mb-3 col-md-6">
+            <div class="input-group-prepend">
+              <label class="input-group-text">If yes, Language Required :</label>
+            </div>
+            <input type="text" class="form-control" [(ngModel)]="Data.LanguageRequired" required [disabled]="true">
+          </div>
+
+
+        </div>
+
+        <div class="row">
+          <div class="input-group mb-3 col-md-6">
+            <div class="input-group-prepend">
+              <label class="input-group-text">Do you require Visa Assistance :</label>
+            </div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <input type="radio" name="VisaAssistance" value="No" [(ngModel)]="Data.VisaAssistance" [disabled]="true"> No
+            &nbsp; &nbsp;
+            &nbsp;
+            <input type="radio" name="VisaAssistance" value="Yes" [(ngModel)]="Data.VisaAssistance" [disabled]="true">
+            Yes
+          </div>
+
+
+        </div>
+
+
+        <!--<div class="row">-->
+        <!--<div class="input-group mb-3 col-md-12">-->
+        <!--<div class="input-group-prepend">-->
+        <!--<label class="input-group-text" for="inputGroupSelect01">Instruction Manual</label>-->
+        <!--</div>-->
+        <!--<div class="custom-file">-->
+        <!--<input type="file" id="InstructionManual" class="custom-file-input">-->
+        <!--<label class="custom-file-label" for="inputGroupFile04">Choose file</label>-->
+        <!--</div>-->
+        <!--<div class="input-group-append">-->
+        <!--<button (click)="ClearDataInputTypeFile('InstructionManual')" class="btn btn-outline-secondary"-->
+        <!--type="button">clear data-->
+        <!--</button>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+
+        <!--<button class="btn btn-outline-secondary button-at-bottom" (click)="SubmitToApprove()">Submit To Approve-->
+        <!--</button>-->
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="row justify-content-center">
+    <div class="equipment-detail-background card">
+      <div class="card-body">
+        <h5 class="card-title">Clinical Information</h5>
+        <div class="row">
+          <div class=" col-md-6">
+            Medical Diagnosis :
+
+            <input type="text" class="form-control" [(ngModel)]="Data.MedicalDiagnosis1" required placeholder="1"
+                   [disabled]="true"> <br>
+            <input type="text" class="form-control" [(ngModel)]="Data.MedicalDiagnosis2" required placeholder="2"
+                   [disabled]="true"><br>
+            <input type="text" class="form-control" [(ngModel)]="Data.MedicalDiagnosis3" required placeholder="3"
+                   [disabled]="true"><br>
+            <input type="text" class="form-control" [(ngModel)]="Data.MedicalDiagnosis4" required placeholder="4"
+                   [disabled]="true"><br>
+            <input type="text" class="form-control" [(ngModel)]="Data.MedicalDiagnosis5" required placeholder="5"
+                   [disabled]="true"><br>
+            <input type="text" class="form-control" [(ngModel)]="Data.MedicalDiagnosis6" required placeholder="6"
+                   [disabled]="true"><br>
+          </div>
+          <div class="input-group mb-3 col-md-6">
+            Current Medical Condition :
+            <textarea [(ngModel)]="Data.CurrentMedicalCondition" style="width: 100%;height: 90%;"
+                      [disabled]="true"></textarea>
+
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class=" col-md-6">
+            Medical List :
+
+            <input type="text" class="form-control" [(ngModel)]="Data.MedicalList1" required placeholder="1"
+                   [disabled]="true"> <br>
+            <input type="text" class="form-control" [(ngModel)]="Data.MedicalList2" required placeholder="2"
+                   [disabled]="true"><br>
+            <input type="text" class="form-control" [(ngModel)]="Data.MedicalList3" required placeholder="3"
+                   [disabled]="true"><br>
+            <input type="text" class="form-control" [(ngModel)]="Data.MedicalList4" required placeholder="4"
+                   [disabled]="true"><br>
+            <input type="text" class="form-control" [(ngModel)]="Data.MedicalList5" required placeholder="5"
+                   [disabled]="true"><br>
+            <input type="text" class="form-control" [(ngModel)]="Data.MedicalList6" required placeholder="6"
+                   [disabled]="true"><br>
+          </div>
+          <div class="input-group mb-3 col-md-6">
+            Do you have any allergy :
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <input type="radio" name="AnyAllergy" value="No" [(ngModel)]="Data.AnyAllergy" [disabled]="true"> No &nbsp;
+            &nbsp; &nbsp;
+            <input type="radio" name="AnyAllergy" value="Yes" [(ngModel)]="Data.AnyAllergy" [disabled]="true"> Yes
+
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-group mb-3 col-md-6">
+            If yes, please provide details :
+            <textarea [(ngModel)]="Data.ProvideDetails" style="width: 100%;height: 90%;" [disabled]="true"></textarea>
+          </div>
+          <div class="input-group mb-3 col-md-6">
+            Treatment Given :
+            <textarea [(ngModel)]="Data.TreatmentGiven" style="width: 100%;height: 90%;" [disabled]="true"></textarea>
+
+          </div>
+
+        </div>
+
+
+        <div class="row">
+          <div class="input-group mb-3 col-md-6">
+            Reason for Referral :
+            <textarea [(ngModel)]="Data.ReasonForReferral" style="width: 100%;height: 90%;"
+                      [disabled]="true"></textarea>
+          </div>
+          <div class="input-group mb-3 col-md-6">
+            Special Needs :
+            <textarea [(ngModel)]="Data.SpecialNeeds" style="width: 100%;height: 90%;" [disabled]="true"></textarea>
+
+          </div>
+
+        </div>
+
+        <div class="row">
+          <div class="input-group mb-3 col-md-6">
+            Prepared By :
+            <textarea [(ngModel)]="Data.PreparedBy" style="width: 100%;height: 90%;" [disabled]="true"></textarea>
+          </div>
+          <div class="input-group mb-3 col-md-6">
+            Hospital Request :
+            <textarea [(ngModel)]="Data.HospitalRequest" style="width: 100%;height: 90%;" [disabled]="true"></textarea>
+          </div>
+
+        </div>
+
+        <br><br>
+        <div class="row">
+
+
+          <div class="input-group mb-3 col-md-6">
+
+            Attach File &nbsp; <input type="text" [(ngModel)]="AttachFile.name" [disabled]="true">
+            <button (click)="DownloadFile('AttachFile')">Download</button>
+
+
+          </div>
+
+        </div>
+
+
+
+        <div class="row">
+
+
+          <div class="input-group mb-3 col-md-6" *ngIf="Status === 'Approved' ">
+
+            Attach File From Hospital  <input type="text" [(ngModel)]="AttachFileHospital.name" [disabled]="true">
+            <button (click)="DownloadFile('AttachFileHospital')">Download</button>
+
+
+          </div>
+
+        </div>
+
+
+
+        <div *ngIf="Permission==='Admin'">
+
+
+          If reject, Reject because :
+          <textarea [(ngModel)]="RejectNote" style="width: 100%;height: 90%;" [disabled]="Status === 'SendingAppointmentToHospital' || Status === 'Approved'"></textarea>
+
+
+
+          Select Hospital :
+          <select class="custom-select" required  [disabled]="Status === 'SendingAppointmentToHospital' || Status === 'Approved'"
+                  [(ngModel)]="HospitalSelect[0].Name">
+            <option *ngFor="let HospitalSelected of HospitalList"
+                    [value]="HospitalSelected.Name">
+              {{HospitalSelected.Name}}
+            </option>
+
+          </select>
+
+
+          <select class="custom-select" required *ngIf="HospitalSelectIndex >= 2"  [disabled]="Status === 'SendingAppointmentToHospital' || Status === 'Approved'"
+                  [(ngModel)]="HospitalSelect[1].Name">
+            <option *ngFor="let HospitalSelected of HospitalList"
+                    [value]="HospitalSelected.Name">
+              {{HospitalSelected.Name}}
+            </option>
+          </select>
+
+
+          <select class="custom-select" required *ngIf="HospitalSelectIndex >= 3"  [disabled]="Status === 'SendingAppointmentToHospital' || Status === 'Approved'"
+                  [(ngModel)]="HospitalSelect[2].Name">
+            <option *ngFor="let HospitalSelected of HospitalList"
+                    [value]="HospitalSelected.Name">
+              {{HospitalSelected.Name}}
+            </option>
+          </select>
+
+
+          <select class="custom-select" required *ngIf="HospitalSelectIndex >= 4"  [disabled]="Status === 'SendingAppointmentToHospital' || Status === 'Approved'"
+                  [(ngModel)]="HospitalSelect[3].Name">
+            <option *ngFor="let HospitalSelected of HospitalList"
+                    [value]="HospitalSelected.Name">
+              {{HospitalSelected.Name}}
+            </option>
+          </select>
+
+
+          <select class="custom-select" required *ngIf="HospitalSelectIndex >= 5"  [disabled]="Status === 'SendingAppointmentToHospital' || Status === 'Approved'"
+                  [(ngModel)]="HospitalSelect[4].Name">
+            <option *ngFor="let HospitalSelected of HospitalList"
+                    [value]="HospitalSelected.Name">
+              {{HospitalSelected.Name}}
+            </option>
+          </select>
+
+
+          <select class="custom-select" required *ngIf="HospitalSelectIndex >= 6"  [disabled]="Status === 'SendingAppointmentToHospital' || Status === 'Approved'"
+                  [(ngModel)]="HospitalSelect[5].Name">
+            <option *ngFor="let HospitalSelected of HospitalList"
+                    [value]="HospitalSelected.Name">
+              {{HospitalSelected.Name}}
+            </option>
+          </select>
+
+
+          <select class="custom-select" required *ngIf="HospitalSelectIndex >= 7"  [disabled]="Status === 'SendingAppointmentToHospital' || Status === 'Approved'"
+                  [(ngModel)]="HospitalSelect[6].Name">
+            <option *ngFor="let HospitalSelected of HospitalList"
+                    [value]="HospitalSelected.Name">
+              {{HospitalSelected.Name}}
+            </option>
+          </select>
+
+
+          <select class="custom-select" required *ngIf="HospitalSelectIndex >= 8"  [disabled]="Status === 'SendingAppointmentToHospital' || Status === 'Approved'"
+                  [(ngModel)]="HospitalSelect[7].Name">
+            <option *ngFor="let HospitalSelected of HospitalList"
+                    [value]="HospitalSelected.Name">
+              {{HospitalSelected.Name}}
+            </option>
+          </select>
+
+          <select class="custom-select" required *ngIf="HospitalSelectIndex >= 9"  [disabled]="Status === 'SendingAppointmentToHospital' || Status === 'Approved'"
+                  [(ngModel)]="HospitalSelect[8].Name">
+            <option *ngFor="let HospitalSelected of HospitalList"
+                    [value]="HospitalSelected.Name">
+              {{HospitalSelected.Name}}
+            </option>
+          </select>
+
+
+
+          <button class="btn btn-primary" (click)="AddAnotherHospital()" [disabled]="HospitalSelectIndex >= 9 || Status === 'SendingAppointmentToHospital' || Status === 'Approved'"> Add another hospital
+          </button>
+
+          <br> <br>
+
+
+
+          <div class="row" *ngIf="Status === 'SendingAppointmentToHospital' || Status === 'Approved'" >
+
+
+            <div class="input-group mb-3 col-md-6" *ngIf="Status === 'SendingAppointmentToHospital' ">
+
+              Attach File From Hospital  <input type="file" id="AttachFileHospital"
+                                                placeholder="AttachFile" required>
+              <button (click)="ClearDataInputTypeFile('AttachFileHospital')">clear data</button>
+
+
+            </div>
+
+
+          </div>
+
+          <button class="btn btn-danger" (click)="Reject()"  [disabled]="Status === 'SendingAppointmentToHospital' || Status === 'Approved'"> Reject
+          </button>
+          <button class="btn btn-success" (click)="SendAppointmentToHospital()"  [disabled]="Status === 'SendingAppointmentToHospital' || Status === 'Approved'">Send Appointment To Hospital
+          </button>
+
+          <button class="btn btn-success" (click)="Approve()"  *ngIf= "Status === 'SendingAppointmentToHospital'">Approve
+          </button>
+
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
