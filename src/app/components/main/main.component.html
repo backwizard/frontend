@@ -1,4 +1,3 @@
-
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -10,10 +9,10 @@
       <img class="d-block w-100" src="{{First_slide}}" alt="First slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100"  src="{{Second_slide}}" alt="Second slide">
+      <img class="d-block w-100" src="{{Second_slide}}" alt="Second slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100"  src="{{Third_slide}}" alt="Third slide">
+      <img class="d-block w-100" src="{{Third_slide}}" alt="Third slide">
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -25,19 +24,111 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
+<br>
+<div class="container">
+  <div class="card card-nav-tabs card-plain">
+    <div class="card-header card-header-primary">
+      <!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
+      <div class="nav-tabs-navigation">
+        <div class="nav-tabs-wrapper">
+          <ul class="nav nav-tabs justify-content-center" data-tabs="tabs">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home" data-toggle="tab"><i class="material-icons">directions_walk</i>Specialize
+                Doctors</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#updates" data-toggle="tab"><i class="material-icons">local_hospital</i>Condition
+                & Treatment</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#history" data-toggle="tab"><i class="material-icons">dashboard</i>Book
+                Appointment</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#book" data-toggle="tab"><i class="material-icons">local_car_wash</i>Book
+                transportation</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="tab-content text-center">
+        <div class="tab-pane active" id="home">
+
+          <div *ngFor='let sublist of doctorList'>
+
+            <div class="row">
+              <div *ngFor='let doctor of sublist'>
+
+
+                <div class="card" style="width: 20rem;margin-left: 25px;margin-right: 25px">
+                  <img class="card-img-top img-raised rounded-circle" style="align-self: center;margin-top: 5px" src="{{doctor.photo}}"  >
+                  <div class="card-body">
+                    <h4 class="card-title">{{doctor.fullName}}</h4>
+                    <h6 class="card-subtitle mb-2 text-muted">specialty : {{doctor.specialty}}</h6>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+          <!--<div class="card" style="width: 20rem;">-->
+          <!--<img class="card-img-top" src="{{doctor.photo}}" alt="Card image cap">-->
+          <!--<div class="card-body">-->
+          <!--<h4 class="card-title">{{doctor.fullName}}</h4>-->
+          <!--<h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>-->
+          <!--<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's-->
+          <!--content.</p>-->
+          <!--<a href="#" class="card-link">Card link</a>-->
+          <!--<a href="#" class="card-link">Another link</a>-->
+          <!--</div>-->
+          <!--</div>-->
+
+
+        </div>
+        <div class="tab-pane" id="updates">
+          <p> I will be the leader of a company that ends up being worth billions of dollars, because I got the answers.
+            I understand culture. I am the nucleus. I think that&#x2019;s a responsibility that I have, to push
+            possibilities, to show people, this is the level that things could be at. I think that&#x2019;s a
+            responsibility that I have, to push possibilities, to show people, this is the level that things could be
+            at. </p>
+        </div>
+        <div class="tab-pane" id="history">
+          <p> I think that&#x2019;s a responsibility that I have, to push possibilities, to show people, this is the
+            level that things could be at. I will be the leader of a company that ends up being worth billions of
+            dollars, because I got the answers. I understand culture. I am the nucleus. I think that&#x2019;s a
+            responsibility that I have, to push possibilities, to show people, this is the level that things could be
+            at.</p>
+        </div>
+        <div class="tab-pane" id="book">
+          <p> I think that&#x2019;s a responsibility that I have, to push possibilities, to show people, this is the
+            level that things could be at. I will be the leader of a company that ends up being worth billions of
+            dollars, because I got the answers. I understand culture. I am the nucleus. I think that&#x2019;s a
+            responsibility that I have, to push possibilities, to show people, this is the level that things could be
+            at.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 <!--<p>-->
-  <!--<a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">-->
-    <!--Link with href-->
-  <!--</a>-->
-  <!--<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false"-->
-          <!--aria-controls="collapseExample">-->
-    <!--Button with data-target-->
-  <!--</button>-->
+<!--<a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">-->
+<!--Link with href-->
+<!--</a>-->
+<!--<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false"-->
+<!--aria-controls="collapseExample">-->
+<!--Button with data-target-->
+<!--</button>-->
 <!--</p>-->
 <!--<div class="collapse" id="collapseExample">-->
-  <!--<div class="card card-body">-->
-    <!--Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica,-->
-    <!--craft beer labore wes anderson cred nesciunt sapiente ea proident.-->
-  <!--</div>-->
+<!--<div class="card card-body">-->
+<!--Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica,-->
+<!--craft beer labore wes anderson cred nesciunt sapiente ea proident.-->
+<!--</div>-->
 <!--</div>-->

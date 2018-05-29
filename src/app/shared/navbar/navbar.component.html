@@ -1,7 +1,6 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-primary bg-custom-nav">
-
+<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-primary bg-custom-nav">
+  <img src="{{logoImageUrl}}" class="navbar-image" height="63.5" width="274">
   <div class="container">
-    <img src="{{logoImageUrl}}" class="navbar-image" height="63.5" width="274">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
             aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -31,9 +30,13 @@
         <li class="nav-item">
           <a class="nav-link" href="#">CONTACT</a>
         </li>
+        <li class="nav-item">
+            <button class="btn btn-info btn-sm btn-round" (click)="goToLogin()">Login</button>
+        </li>
+        <li class="nav-item">
+            <button class="btn btn-rose btn-sm btn-round">Logout</button>
+        </li>
       </ul>
     </div>
-
-    <button (click)="goToLogin()">Login</button>
   </div>
 </nav>
